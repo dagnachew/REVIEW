@@ -1,0 +1,27 @@
+{{> header}}
+
+<div class="container">
+    <div class="row mt-5">
+        <h1 class="mx-auto">Write a new review</h1>
+    </div>
+    <div class="col-md-12">
+        <div class="ui star rating" data-rating="3"></div>
+        <form action="/reviews" method="post" d-block>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Image URL</label>
+                <input type="text" name= "image" placeholder="image url"  class="form-control"> 
+            </div>
+            <div class="form-group">
+                <label for="review">Review</label>
+                <textarea class="form-control" id="review" name="review" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline btn-block">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
